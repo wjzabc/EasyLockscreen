@@ -32,7 +32,7 @@ public class LockScreenService extends Service {
         super.onCreate();
         WindowManager wm = (WindowManager) getSystemService(Context.WINDOW_SERVICE);
         Button btn = new Button(this);
-        btn.setText("ËøÆÁ");
+        btn.setText("é”å±");
         btn.setOnTouchListener(new OnTouchListener() {
             
             @Override
@@ -66,22 +66,22 @@ public class LockScreenService extends Service {
         
         LayoutParams wmParams = new LayoutParams();
 
-        //ÉèÖÃwindow type  
+        //è®¾ç½®window type  
         wmParams.type = LayoutParams.TYPE_PHONE;   
-        //ÉèÖÃÍ¼Æ¬¸ñÊ½£¬Ğ§¹ûÎª±³¾°Í¸Ã÷  
+        //è®¾ç½®å›¾ç‰‡æ ¼å¼ï¼Œæ•ˆæœä¸ºèƒŒæ™¯é€æ˜  
         wmParams.format = PixelFormat.RGBA_8888;   
-        //ÉèÖÃ¸¡¶¯´°¿Ú²»¿É¾Û½¹£¨ÊµÏÖ²Ù×÷³ı¸¡¶¯´°¿ÚÍâµÄÆäËû¿É¼û´°¿ÚµÄ²Ù×÷£©  
+        //è®¾ç½®æµ®åŠ¨çª—å£ä¸å¯èšç„¦ï¼ˆå®ç°æ“ä½œé™¤æµ®åŠ¨çª—å£å¤–çš„å…¶ä»–å¯è§çª—å£çš„æ“ä½œï¼‰  
         wmParams.flags = LayoutParams.FLAG_NOT_FOCUSABLE;        
-        //µ÷ÕûĞü¸¡´°ÏÔÊ¾µÄÍ£¿¿Î»ÖÃÎª×ó²àÖÃ¶¥  
+        //è°ƒæ•´æ‚¬æµ®çª—æ˜¾ç¤ºçš„åœé ä½ç½®ä¸ºå·¦ä¾§ç½®é¡¶  
         wmParams.gravity = Gravity.LEFT | Gravity.TOP;         
-        // ÒÔÆÁÄ»×óÉÏ½ÇÎªÔ­µã£¬ÉèÖÃx¡¢y³õÊ¼Öµ£¬Ïà¶ÔÓÚgravity  
+        // ä»¥å±å¹•å·¦ä¸Šè§’ä¸ºåŸç‚¹ï¼Œè®¾ç½®xã€yåˆå§‹å€¼ï¼Œç›¸å¯¹äºgravity  
         wmParams.x = 0;  
         wmParams.y = 0;  
-        //ÉèÖÃĞü¸¡´°¿Ú³¤¿íÊı¾İ    
+        //è®¾ç½®æ‚¬æµ®çª—å£é•¿å®½æ•°æ®    
         wmParams.width = WindowManager.LayoutParams.WRAP_CONTENT;  
         wmParams.height = WindowManager.LayoutParams.WRAP_CONTENT;  
         
-        /*// ÉèÖÃĞü¸¡´°¿Ú³¤¿íÊı¾İ 
+        /*// è®¾ç½®æ‚¬æµ®çª—å£é•¿å®½æ•°æ® 
         wmParams.width = 200; 
         wmParams.height = 80;*/ 
         
